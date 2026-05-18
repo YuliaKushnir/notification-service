@@ -14,8 +14,8 @@ public class NotifictionServiceApplication {
         System.setProperty("MAIL_HOST", dotenv.get("MAIL_HOST"));
         System.setProperty("MAIL_PORT", dotenv.get("MAIL_PORT"));
 
-        System.setProperty("spring_rabbitmq_username", dotenv.get("spring_rabbitmq_username"));
-        System.setProperty("spring_rabbitmq_password", dotenv.get("spring_rabbitmq_password"));
+        System.setProperty("RABBITMQ_USER", dotenv.get("RABBITMQ_USER"));
+        System.setProperty("RABBITMQ_PASSWORD", dotenv.get("RABBITMQ_PASSWORD"));
 
         SpringApplication.run(NotifictionServiceApplication.class, args);
     }
